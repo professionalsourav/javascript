@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "res"></h1>
+    <button onclick="getdate()">date</button>
+    <br>
+    <button onclick="year()">year</button>
+    <br>
+    <button onclick="month()">month</button>
+    <br>
+    <button onclick="hour()">hour</button>
+    <br>
+    <button onclick="ondate()">date</button>
+    <br>
+    <button onclick="day()">day</button>
+</body>
+<script>
+var date = new Date();
+function getdate(){
+    document.getElementById("res").innerText = date; 
+}
+function year(){
+document.getElementById("res").innerText = date.getFullYear();
+}
+function month(){
+    document.getElementById("res").innerText = date.getMonth();
+}
+function hour(){
+    document.getElementById("res").innerText = date.getHours();
+}
+function ondate(){
+    document.getElementById("res").innerText = date.getDate();
+}
+function day(){
+    document.getElementById("res").innerText = date.getDay();
+}
+</script>
+</html>

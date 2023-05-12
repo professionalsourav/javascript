@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "res"></h1>
+    <button onclick="pop()">pop</button>
+    <button onclick="push()">push</button>
+    <button onclick="slice()">slice</button>
+    <button onclick="reverse()">reverse</button>
+    <button onclick="shift()">shift</button>
+    
+    
+</body>
+<script>
+var x = ["12", "34","87","76"];
+var demo = x;
+document.getElementById("res").innerHTML = demo;
+function pop(){
+    demo.pop();
+    document.getElementById("res").innerText = demo;
+}
+function push(){
+  var a =  prompt("plz enter the string","")
+    demo.push(a);
+    document.getElementById("res").innerText = demo;
+}
+function slice(){
+   var a = demo.slice(2);
+    document.getElementById("res").innerText = a;
+}
+function reverse(){
+   var a = demo.reverse();
+    document.getElementById("res").innerText = a;
+}
+function shift(){
+   var a = demo.shift();
+    document.getElementById("res").innerText = a;
+}
+</script>
+</html>
